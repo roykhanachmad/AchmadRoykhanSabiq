@@ -984,6 +984,20 @@
     white-space: nowrap;
     transition: color 0.2s;
   }
+
+  .image-row {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1.2rem 0;
+  }
+
+  .image-row img {
+    width: min(260px, 45%);
+    border-radius: 5px;
+    object-fit: cover;
+  }
  
   .project-link:hover { color: var(--black); }
  
@@ -1435,6 +1449,10 @@
       <p>
         If you have ever read an essay about Gojo's Infinity in mathematics, that was written by me and is available in the LaTeX portfolio. It explores the mathematical concept of infinity through the lens of Gojo Satoru's Limitless technique from Jujutsu Kaisen, such as geometric series, Lebesgue measure, and topology.
       </p>
+      <div class="image-row">
+        <img src="Gojo.png" alt="Gojo Infinity illustration">
+        <img src="Gojo's Cover.png" alt="Second related image">
+      </div>
     </div>
  
     <!-- LaTeX Linktree Card -->
